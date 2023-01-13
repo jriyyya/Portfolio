@@ -26,11 +26,62 @@ export const exploreWorlds = [
   },
 ];
 
+export const projectDetails = [
+  {id: '1',
+  title: 'M E R N',
+name: 'MarsDiet',
+content: [
+  'Created a MERN stack webapp to keep track of one\'s calories automatically',
+   'Used multiple nutrition APIs to create a fall safe backend',
+  'used firebase admin sdk for implementing auth on the backend with frontend token verification',
+],
+github: 'https://github.com/marsian83/marsdiet-frontend',
+hosting_link: 'https://marsdiet.netlify.app/'
+},
+
+{id: '2',
+  title: 'N O D E   W E B A P P',
+name: 'MarsFood',
+content: [
+  'MarsFood is an end to end food delivery app catered to both consumers and restaurants.',
+  'Implemented a full fledged authentication system based on session cookies with vanilla NodeJs and Express.',
+  'Developed responsive frontend for multiple viewports using Vanilla HTML, CSS and JavaScript',
+],
+github: 'https://github.com/marsian83/MarsFood',
+hosting_link: 'https://bit.ly/marsfood'
+},
+
+{id: '3',
+  title: 'R E A C T   W E B A P P',
+name: 'MarsManage',
+content: [
+  'The webapp uses firebase for authentication and as a database',
+  'React is used on the frontend to employ a friendly UI to communicate with the firebase backend',
+  'The webapp allows registered employers to add new employees and keep a track of their daily work shift schedule'
+],
+github: 'https://github.com/marsian83/MarsManage',
+hosting_link: 'marsmanage.netlify.app/'
+},
+{id: '4',
+  title: 'P E R N   S T A C K   W E B A P P',
+name: 'VenusNote',
+content: [
+  'Created a React Based SPA for public note sharing much like a ledger',
+  'Postgres is used for storing user data and and notes',
+  'Express is used to create a well structured CRUD and Auth REST API',
+  'Users get option to add new notes, search and delete them. all notes are public'
+],
+github: './',
+hosting_link: './'
+},
+]
+
 export const startingFeatures = [
   'Find a world that suits you and you want to enter',
   'Enter the world by reading basmalah to be safe',
   'No need to beat around the bush, just stay on the gas and have fun',
 ];
+
 
 export const newFeatures = [
   {
@@ -86,3 +137,13 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+export const skillsIcon = [
+  {name:'python',
+  url: '/python.svg',
+  circle:'/circle.svg',
+},
+  {name:'react',
+url:'/react.svg',
+circle:'/circle.svg',}
+]
