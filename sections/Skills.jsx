@@ -6,6 +6,7 @@ import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Skill from "../components/Skill";
 import { skillsIcon } from "../constants";
+import './Skills.css'
 
 const Skills = () => (
   <section
@@ -20,16 +21,16 @@ const Skills = () => (
     >
       <TypingText title="| My Skills" textStyles="text-center" />
     </motion.div>
-    <div className="p-2 grid grid-cols-8 gap-4 mt-8 border border-white h-[auto] w-[100%]">
-    <div className="flex gap-4">
+    <div className="parent-element">
             {skillsIcon.map((icon) => (
+              <div className="w-1/8 p-4 element hover:scale-150 transition ease-in duration-100">
               <Skill
                 key={icon.name}
                 {...icon}
               />
+              </div>
             ))}
           </div>
-    </div>
   </section>
 );
 

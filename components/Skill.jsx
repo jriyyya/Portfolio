@@ -9,11 +9,11 @@ import React, { useState, useEffect, useRef } from "react";
 
 
 
-const Skill = ({ name, url, circle }) => {
+const Skill = ({ name, icon }) => {
 
   return (
-    <section className={`flex ${styles.flexCenter} `}>
-      ok
+    <section className={`flex ${styles.flexCenter} flex-col hover:cursor-pointer`}>
+      <img src={icon} alt={name} className="object-cover w-16 h-16"/>
     </section>
   );
 };

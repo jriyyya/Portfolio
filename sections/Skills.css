@@ -1,0 +1,20 @@
+.parent-element{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    width: 70%;
+}
+  
+  .element:hover .element:not(:hover) {
+    filter: blur(5px);
+  }
+  
+  .parent-element:hover .element{
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .parent-element .element:hover{
+    opacity:1; 
+    filter: blur(0px);
+  }
