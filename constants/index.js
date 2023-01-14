@@ -125,6 +125,10 @@ export const skillsIcon = [
     icon: "/firebase.png",
   },
   {
+    name: "Framer Motion",
+    icon: "/framer-motion.svg",
+  },
+  {
     name: "HTML",
     icon: "/html.png",
   },

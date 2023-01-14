@@ -11,14 +11,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 
 const Skills = () => {
-  const [skillsName, setSkillsName] = useState([
-    "Python",
-    1000,
-    "Java",
-    1000,
-    "Google cloud platform",
-    1000,
-  ]);
+  const [currSkill, setCurrSkill] = useState("");
 
   return (
     <section
@@ -35,31 +28,54 @@ const Skills = () => {
       </motion.div>
 
       <div className={`skills-text ${styles.flexCenter} flex flex-col`}>
-        <div
-          className="parent-element"
-        >
+        <div className="parent-element">
           {skillsIcon.map((icon) => (
             <div
               className="w-1/8 p-4 element transition ease-in-out duration-100 "
-              onMouseEnter={() => setSkillsName([icon.name, 5000])}
+              onMouseEnter={() => {
+                setCurrSkill(icon.name);
+              }}
             >
               <Skill key={icon.name} {...icon} />
             </div>
           ))}
         </div>
-        <div
-          id="text-box"
-          className={`border p-[3px] ease-in duration-500 border-white w-[400px] rounded-lg bg-white mt-10 flex ${
-            styles.flexCenter
-          } cursor-pointer`}
-        >
-          <TypeAnimation
-            sequence={skillsName}
-            wrapper="div"
-            cursor={true}
-            repeat={Infinity}
-            style={{ fontSize: "1.5em" }}
-          />
+        <div className="relative">
+          <div
+            id="text-box"
+            className={` text-white border top-0 left-0 p-[3px] glassmorphism  w-[400px] rounded-lg mt-10 flex ${styles.flexCenter} cursor-pointer`}
+          >
+            <TypeAnimation
+              sequence={[
+                "Javascript",
+                1000,
+                "React",
+                1000,
+                "Express Js",
+                1000,
+                "Rest APIs",
+                1000,
+                "MongoDB",
+                1000,
+                "Node Js",
+                1000,
+                "Google cloud platform",
+                1000,
+                "Python",
+                1000,
+              ]}
+              wrapper="div"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: "1.5em" }}
+            />
+          </div>
+          <div
+            id="text-box-hover"
+            className={`border  top-0 left-0 p-[3px] w-[400px] rounded-lg glassmorphism text-white bg-white mt-10 cursor-pointer`}
+          >
+            <h3 className=" mx-auto text-[1.5em]">{currSkill}</h3>
+          </div>
         </div>
       </div>
     </section>

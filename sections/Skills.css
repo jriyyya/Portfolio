@@ -14,13 +14,44 @@
   animation: rotate 300ms;
 }
 
-.skills-text:has(.element:hover) #text-box{
+.skills-text:has(.element:hover) #text-box {
+  display: none;
+}
+
+.skills-text:has(.element:hover) #text-box-hover {
+  display: flex;
+  animation: hover-show 300ms;
+}
+
+#text-box {
+  transition: 100ms;
+}
+
+#text-box-hover {
+  display: none;
   transform: scale(1.03) translateY(-1rem);
   box-shadow: 0px 8px 8px hsla(0, 0%, 97%, 0.3);
 }
 
-#text-box{
-  transition: 100ms;
+@keyframes hover-show {
+  from {
+    display: flex;
+    transform: none;
+    box-shadow: 0px 0px 0px hsla(0, 0%, 97%, 0.3);
+  }
+  to {
+    display: flex;
+    transform: scale(1.03) translateY(-1rem);
+    box-shadow: 0px 8px 8px hsla(0, 0%, 97%, 0.3);
+  }
+}
+
+#text-box-hover h3:after {
+  content: "|";
+  animation: text-edit-blink;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotate {
@@ -28,6 +59,33 @@
     transform: rotate(0deg) scale(1);
   }
   to {
-    transform: rotate(719deg) scale(1.5);
+    transform: rotate(359deg) scale(1.5);
+  }
+}
+
+@keyframes text-edit-blink {
+  from {
+    content: "";
+    margin-left: 4px;
+  }
+  24% {
+    content: "";
+    margin-left: 4px;
+  }
+  25% {
+    content: "|";
+    margin-left: 0;
+  }
+  75% {
+    margin-left: 0;
+    content: "|";
+  }
+  76% {
+    content: "";
+    margin-left: 4px;
+  }
+  to {
+    margin-left: 4px;
+    content: "";
   }
 }
