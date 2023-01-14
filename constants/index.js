@@ -148,7 +148,7 @@ export const skillsIcon = [
 
   {
     name: "Google Cloud Platform",
-    icon: "/googleCloud.png",
+    icon: "/googleCloudP.png",
   },
   {
     name: "Java",
