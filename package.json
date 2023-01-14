@@ -15,7 +15,8 @@
     "next": "13.0.3",
     "react": "18.2.0",
     "react-animated-cursor": "^2.5.2",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
