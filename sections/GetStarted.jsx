@@ -8,8 +8,8 @@ import { startingFeatures } from "../constants";
 import { useEffect } from "react";
 
 const GetStarted = () => {
-  const parallexFunction = (e) =>{
-    document.querySelectorAll("#parallex").forEach(function(move){
+  const parallaxFunction = (e) =>{
+    document.querySelectorAll("#parallax").forEach(function(move){
       var moving_value = move.getAttribute("data-value");
       var x = (e.clientX * moving_value)/100;
       var y = (e.clientY * moving_value)/100;
@@ -17,7 +17,7 @@ const GetStarted = () => {
     })
   }
    useEffect(()=>{
-    document.addEventListener("mousemove",parallexFunction)
+    document.addEventListener("mousemove",parallaxFunction)
    })
 
   return (
@@ -50,8 +50,8 @@ const GetStarted = () => {
 
         <div className="basis-1/2 flex justify-end relative">
         <motion.img variants={monitorFramer('tween',0.4,1.5,'130%')} className={`object-cover`}  src='/monitor.png' alt='monitor' />
-        <motion.img variants={monitorFramer('tween',0.6,1.5,"600%")} className={` object-cover absolute bottom-10 left-40`}  src='/block.png' alt='block' data-value="1" id="parallex"/>
-        <motion.img variants={monitorFramer('tween',0.7,1.5,"500%")} className=" object-cover absolute top-10 right-20"  src='/smallBlock.png' alt='SmallBlock' data-value="1" id="parallex"/>
+        <motion.img variants={monitorFramer('tween',0.6,1.5,"600%")} className={` object-cover absolute bottom-10 left-40`}  src='/block.png' alt='block' data-value="1" id="parallax"/>
+        <motion.img variants={monitorFramer('tween',0.7,1.5,"500%")} className=" object-cover absolute top-10 right-20"  src='/smallBlock.png' alt='SmallBlock' data-value="1" id="parallax"/>
 
           </div>
       </div>

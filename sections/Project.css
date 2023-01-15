@@ -1,0 +1,23 @@
+.project-card:hover #keyboard {
+  content: url("/keyboard-active.png");
+  @apply opacity-100;
+}
+
+.project-card:hover #monitor {
+  content: var(--project-monitor);
+}
+
+.project-card:hover #phone {
+    content: var(--project-phone);
+    @apply opacity-100;
+}
+
+.project-card:hover #circle {
+    content: url('/circle-active.png');
+    @apply opacity-100;
+}
+
+.project-card:hover{
+    box-shadow: 0px 0px 36rem black;
+    filter: drop-shadow(0px 0px 0.1rem black);
+}
