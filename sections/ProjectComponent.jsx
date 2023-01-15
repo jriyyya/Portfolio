@@ -8,6 +8,7 @@ import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
 import MarsFoodComponent from "../components/MarsFoodComponent";
 import MarsDietComponent from "../components/MarsDietComponent"
+import MarsManageComponent from "../components/MarsManageComponent"
 
 const ProjectComponent = ({ title, name, content, github, hosting_link,index }) => {
  
@@ -51,6 +52,7 @@ const ProjectComponent = ({ title, name, content, github, hosting_link,index }) 
       </motion.div>
      {index===0 && <MarsDietComponent />}
      {index===1 && <MarsFoodComponent />} 
+     {index===2 && <MarsManageComponent />}
     </section>
   );
 };
