@@ -30,13 +30,13 @@ const Skills = () => {
       <div className={`skills-text ${styles.flexCenter} flex flex-col`}>
         <div className="parent-element">
           {skillsIcon.map((icon) => (
-            <div
+            <div key={icon.name} 
               className="w-1/8 p-4 element transition ease-in-out duration-100 "
               onMouseEnter={() => {
                 setCurrSkill(icon.name);
               }}
             >
-              <Skill key={icon.name} {...icon} />
+              <Skill {...icon} />
             </div>
           ))}
         </div>

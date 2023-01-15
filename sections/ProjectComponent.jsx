@@ -41,7 +41,12 @@ const ProjectComponent = ({title, name, content, github, hosting_link}) => (
         </a>
       </div>
     </motion.div>
-    <div>notOk</div>
+    <div className="relative basis-1/2">
+      <img src="/monitorProject.png" alt="monitor" className="absolute right-0"/>
+      <img src="/circle.png" alt="circle" className="absolute -z-5 bottom-5 opacity-50 right-10 overflow-hidden " />
+      <img src="/keyboard.png" alt="keyboard" className="absolute bottom-5 opacity-50 right-70 w-[50%]" />
+      <img src="/phone.png" alt="phone" className="absolute bottom-44 opacity-50 right-100 w-[25%]"/>
+    </div>
   </section>
 );
 
