@@ -1,0 +1,122 @@
+.name-word-gradient-front {
+  transition: 2000ms;
+  background-position: center;
+  opacity: 0;
+}
+
+.name-word-gradient-back {
+  transition: 1000ms;
+  background-position: center;
+  opacity: 0;
+}
+
+.name-word {
+  transition: 200ms;
+}
+
+.name-word-gradient-front {
+  background-image: linear-gradient(
+    to top right,
+    hsl(295deg 76% 51%) 0%,
+    hsl(220deg 76% 51%) 100%
+  );
+}
+
+.name-word-gradient-back {
+  background-image: linear-gradient(
+    to top right,
+    rgb(118, 151, 218) 100%,
+    hsl(295deg 76% 51%) 0%
+  );
+}
+
+.name-word-container:has(.name-word-gradient:hover) .name-word-gradient-back,
+.name-word-container:has(.name-word-gradient:hover) .name-word-gradient-front {
+  transition: 500ms;
+  opacity: 1;
+  border: 0;
+}
+
+.name-word-gradient-back,
+.name-word-gradient-front {
+  animation: hero-name-place-gradient-show 3000ms ease-in;
+}
+
+.name-words-container {
+  animation: hero-name-place 3000ms ease-out;
+}
+
+.name-word-container {
+  --initial-delay: 500ms;
+  --delay-step: 300ms;
+  animation: name-word-show 200ms ease-in-out;
+}
+
+@keyframes name-word-show {
+  from {
+    transform: scale(0);
+  }
+  93% {
+    transform: scale(1.1);
+  }
+  97% {
+    scale: 0.97;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes name-word-keep-hidden {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 0;
+  }
+}
+
+.name-word-container:nth-of-type(1) {
+  --n: 1;
+  animation: name-word-keep-hidden
+      calc(var(--initial-delay) + var(--delay-step) * var(--n)),
+    name-word-show 400ms ease-in-out forwards
+      calc(var(--initial-delay) + var(--delay-step) * var(--n));
+}
+
+.name-word-container:nth-of-type(2) {
+  --n: 4;
+  animation: name-word-keep-hidden
+      calc(var(--initial-delay) + var(--delay-step) * var(--n)),
+    name-word-show 400ms ease-in-out forwards
+      calc(var(--initial-delay) + var(--delay-step) * var(--n));
+}
+
+.name-word-container:nth-of-type(3) {
+  --n: 2;
+  animation: name-word-keep-hidden
+      calc(var(--initial-delay) + var(--delay-step) * var(--n)),
+    name-word-show 400ms ease-in-out forwards
+      calc(var(--initial-delay) + var(--delay-step) * var(--n));
+}
+
+.name-word-container:nth-of-type(4) {
+  --n: 3;
+  animation: name-word-keep-hidden
+      calc(var(--initial-delay) + var(--delay-step) * var(--n)),
+    name-word-show 400ms ease-in-out forwards
+      calc(var(--initial-delay) + var(--delay-step) * var(--n));
+}
+
+@keyframes hero-name-place {
+  from {
+    transform: translateY(30vh);
+    scale: 5;
+  }
+}
+
+@keyframes hero-name-place-gradient-show {
+  from {
+    opacity: 1;
+  }
+}

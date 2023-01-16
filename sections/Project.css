@@ -21,3 +21,12 @@
     box-shadow: 0px 0px 36rem black;
     filter: drop-shadow(0px 0px 0.1rem black);
 }
+
+
+.project-card:hover #tablet{
+  content: url("/tablet-active.png")
+}
+
+.project-card:hover #tablet-down{
+  content: url("/tablet-down-active.png")
+}
