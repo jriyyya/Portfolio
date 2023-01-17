@@ -3,12 +3,12 @@ import { About, Feedback, GetStarted, Hero,World} from '../sections';
 
 const Page = () => (
   <div className='bg-primary-black overflow-hidden'>
-    {/* <Navbar /> */}
+    <Navbar />
     <Hero />
     <div className='relative'>
-    <Skills />
-    <div className='gradient-03 z-0' />
     <About />
+    <div className='gradient-03 z-0' />
+    <Skills />
     </div>
     <Project />
     <div className='relative'>

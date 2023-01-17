@@ -7,7 +7,8 @@ import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`${styles.yPaddings} sm:pl-16 pl-6 h-screen`}>
+    <section className={`${styles.yPaddings} sm:pl-16 pl-6 `}>
+      
       <div className="flex flex-row justify-center gap-14 my-name">
         <div className="name-words-container flex flex-row justify-center gap-1">
           <div className="name-word-container relative">
