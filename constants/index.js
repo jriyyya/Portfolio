@@ -11,7 +11,7 @@ export const projectDetails = [
       "ScrollTriggers and IntersectionObservers have been modified under the hood"
     ],
     github: "https://github.com/jriyyya/Portfolio",
-    hosting_link: "./bit.ly/jriyyya",
+    hosting_link: "https://portfolio-jriyyya.vercel.app/",
   },
 
   {
