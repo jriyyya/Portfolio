@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { TypingText, StartSteps } from "../components";
 
-import "./Project.css";
+import "../styles/Project.css";
 
 import styles from "../styles";
 import { staggerContainer } from "../utils/motion";

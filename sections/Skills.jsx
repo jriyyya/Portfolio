@@ -6,7 +6,7 @@ import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Skill from "../components/Skill";
 import { skillsIcon } from "../constants";
-import "./Skills.css";
+import "../styles/Skills.css";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 

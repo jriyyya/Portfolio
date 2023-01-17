@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import "../sections/Project.css";
+import "../styles/Project.css";
 
 const MarsFoodComponent = () => {
   const parallaxFunction = (e) => {

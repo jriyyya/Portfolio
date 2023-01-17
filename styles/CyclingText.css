@@ -1,0 +1,42 @@
+.cycle-div{
+    color: rgb(118, 151, 218);
+    font-weight: bolder;
+}
+
+.cycle-div span{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    animation: rotateWord var(--anim-length) linear infinite;
+    animation-delay: var(--anim-delay);
+}
+
+@keyframes rotateWord {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 0;
+      transform: translateY(-30%);
+    }
+    5% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    17% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
