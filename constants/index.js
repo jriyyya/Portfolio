@@ -1,7 +1,21 @@
 
 export const projectDetails = [
+
   {
     id: "1",
+    title: "N E X T J S   W E B S I T E",
+    name: "Portfolio",
+    content: [
+      "Created a personal portfolio website in NextJS employing static site generation methodology",
+      "Used Framer Motion for animating the user interface",
+      "ScrollTriggers and IntersectionObservers have been modified under the hood"
+    ],
+    github: "https://github.com/jriyyya/Portfolio",
+    hosting_link: "./bit.ly/jriyyya",
+  },
+
+  {
+    id: "2",
     title: "M E R N",
     name: "MarsDiet",
     content: [
@@ -14,7 +28,7 @@ export const projectDetails = [
   },
 
   {
-    id: "2",
+    id: "3",
     title: "N O D E   W E B A P P",
     name: "MarsFood",
     content: [
@@ -27,7 +41,7 @@ export const projectDetails = [
   },
 
   {
-    id: "3",
+    id: "4",
     title: "R E A C T   W E B A P P",
     name: "MarsManage",
     content: [
@@ -37,19 +51,6 @@ export const projectDetails = [
     ],
     github: "https://github.com/marsian83/MarsManage",
     hosting_link: "marsmanage.netlify.app/",
-  },
-  {
-    id: "4",
-    title: "P E R N   S T A C K   W E B A P P",
-    name: "VenusNote",
-    content: [
-      "Created a React Based SPA for public note sharing much like a ledger",
-      "Postgres is used for storing user data and and notes",
-      "Express is used to create a well structured CRUD and Auth REST API",
-      "Users get option to add new notes, search and delete them. all notes are public",
-    ],
-    github: "./",
-    hosting_link: "./",
   },
 ];
 

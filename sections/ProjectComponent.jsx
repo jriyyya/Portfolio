@@ -50,9 +50,9 @@ const ProjectComponent = ({ title, name, content, github, hosting_link,index }) 
           </a>
         </div>
       </motion.div>
-     {index===0 && <MarsDietComponent />}
-     {index===1 && <MarsFoodComponent />} 
-     {index===2 && <MarsManageComponent />}
+     {index===1 && <MarsDietComponent />}
+     {index===2 && <MarsFoodComponent />} 
+     {index===3 && <MarsManageComponent />}
     </section>
   );
 };

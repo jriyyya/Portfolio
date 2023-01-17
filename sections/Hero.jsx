@@ -141,34 +141,12 @@ const Hero = () => {
         <motion.div  variants={textVariant(2)} className="flex flex-col items-start gap-4 font-bold">
           <div>I am a student at IIIT Gwalior</div>
           <div className="flex flex-row gap-4">and a  
-            <CyclingText cycle={["Web Developer","Programmer","Blockchain enthusiast","Anime Lover", "Intersectional Feminist"]}/>
+            <CyclingText cycle={["Web Developer","Programmer","Blockchain enthusiast","Anime Lover"]}/>
           </div>
         </motion.div>
       </div>
       
       </motion.div>
-
-      {/* <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
-    >
-      <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Riya 
-        </motion.h1>
-        <motion.div variants={textVariant(1.2)}
-        className="flex flex-row justify-center items-center">
-          <h1 className={ styles.heroHeading}>JA</h1>
-          <h1 className={styles.heroAText}>i</h1>
-          <h1 className={ styles.heroHeading}>N</h1>
-        </motion.div>
-      </div>
-
-      
-    </motion.div> */}
     </section>
   );
 };
