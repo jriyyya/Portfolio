@@ -5,11 +5,12 @@ import styles from "../styles";
 import "../styles/Hero.css"
 import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 import CyclingText from "../components/CyclingText";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <section
-      className={`${styles.yPaddings} sm:pl-16 pl-6 h-screen flex flex-col justify-center`}
+      className={`${styles.yPaddings} h-screen flex flex-col justify-center`}
     >
       <div className="flex flex-row justify-center gap-14">
         <div className="name-words-container flex flex-row justify-center gap-1">
@@ -141,12 +142,23 @@ const Hero = () => {
         <motion.div  variants={textVariant(2)} className="flex flex-col items-start gap-4 font-bold">
           <div>I am a student at IIIT Gwalior</div>
           <div className="flex flex-row gap-4">and a  
-            <CyclingText cycle={["Web Developer","Programmer","Blockchain enthusiast","Anime Lover"]}/>
+            <CyclingText cycle={["Web Developer","Programmer","Blockchain enthusiast","Anime Lover","Music addict"]}/>
           </div>
         </motion.div>
-      </div>
-      
+      <motion.div variants={textVariant(2.5)} className="flex justify-center mt-10">
+      <Link  target={`_newABC`} href={'/Riya_Jain_IIIT_25.pdf'} class="text-white font-extra bold border-4 rounded-3xl text-3xl px-5 py-4">Resume</Link>
       </motion.div>
+      </div>
+      <motion.div variants={textVariant(3)} class="absolute bottom-0 left-[48%] text-white flex justify-center">
+        <img src="/scrolldown.gif" alt="scroll" className="invert w-16"/>
+      </motion.div>
+      </motion.div>
+      
+
+
+      
+      
+      
     </section>
   );
 };
