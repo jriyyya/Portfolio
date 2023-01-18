@@ -64,21 +64,21 @@ export const startingFeatures = [
 
 export const socials = [
   {
-    name: "twitter",
-    url: "/twitter.svg",
-  },
-  {
     name: "linkedin",
     url: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/jriyyya"
+    
   },
   {
     name: "instagram",
     url: "/instagram.svg",
+    link: "https://www.linkedin.com/in/jriyyya"
   },
-  {
-    name: "facebook",
-    url: "/facebook.svg",
-  },
+ {
+  name: "Github",
+  url: "/github.svg",
+  link: "https://www.linkedin.com/in/jriyyya"
+ }
 ];
 
 export const skillsIcon = [

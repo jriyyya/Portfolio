@@ -14,20 +14,19 @@ const Feedback = () => (
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.2, 1)}
-        className="basis-2/3 gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative"
+        className="flex align-middle justify-center flex-col basis-3/5  gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative"
       >
         {/* <div className="feedback-gradient" /> */}
-        <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white">
+          <h4 className="font-bold sm:text-[32px] text-[26px]   text-white">
             Riya Jain
           </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22px] leading-[16px] text-white">
+          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22px] text-white">
             Expected Graduation - 2025
           </p>
-          <div className="mt-[24px] font-normal sm:text-[24px] sm:leading-[45px] leading-[39px] text-white">
+          <div className="mt-[24px] font-normal text-[20px] sm:leading-[45px]  text-white">
             I'm a sophomore at <span className="font-extrabold">IIIT Gwalior</span> pursuing BTech in Information
             Technology I have my expertise in web development, especially with
-            the MERN stack. Technologies I've worked with : 
+            the MERN stack. Technologies I've worked with: 
             <br />• Programming -
             Python, JavaScript, C/C++ 
             <br />
@@ -44,41 +43,44 @@ const Feedback = () => (
             I'm always ready to have new experiences, meet new people and work
             in the latest fast paced environments.
           </div>
-        </div>
       </motion.div>
 
 
-      <div className="flex flex-col gap-4">
+      <div className="basis-2/5 flex flex-col gap-4">
         
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
         className="gradient-05 border rounded-[32px] relative p-6"
       >
         <form>
+          <div className="flex flex-row justify-between">
+
         <h4 className="font-bold text-[26px] text-white">
             FeedBack
           </h4>
-          <h4 className="text-[20px] text-white mt-4">
+          <button className="bg-[#92b8f4ae] font-extrabold text-white rounded-lg px-4">Send</button>
+          </div>
+          <h4 className="text-[20px] text-white mt-2">
             Email
           </h4>
-          <input className="rounded" type="email"/>
+        <input className="rounded w-full p-1" type="email"/>
 
-          <h4 className="text-[20px] text-white mt-8">
+          <h4 className="text-[20px] text-white mt-4">
             Your/Your Organization Name
           </h4>
-          <input className="rounded" type="text"/>
+          <input className="rounded w-full p-1" type="text"/>
 
-          <h4 className="text-[20px] text-white mt-8">
+          <h4 className="text-[20px] text-white mt-4">
             Feedback
           </h4>
-          <textarea className="rounded"/>
+          <textarea className="w-full rounded p-1"/>
 
 
         </form>
       </motion.div>
 
-      <div className="basis-1/3">
-        <img src="/cat.webp" alt="cat" className="rounded-[32px]" />
+      <div className="">
+        <img src="/cat.jpg" alt="cat" className="rounded-[32px]" />
       </div>
       
       </div>
