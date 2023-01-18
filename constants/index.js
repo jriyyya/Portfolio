@@ -2,7 +2,7 @@
 export const projectDetails = [
 
   {
-    id: "1",
+    number: 1,
     title: "N E X T J S   W E B S I T E",
     name: "Portfolio",
     content: [
@@ -15,7 +15,7 @@ export const projectDetails = [
   },
 
   {
-    id: "2",
+    number: 2,
     title: "M E R N",
     name: "MarsDiet",
     content: [
@@ -28,7 +28,7 @@ export const projectDetails = [
   },
 
   {
-    id: "3",
+    number: 3,
     title: "N O D E   W E B A P P",
     name: "MarsFood",
     content: [
@@ -41,7 +41,7 @@ export const projectDetails = [
   },
 
   {
-    id: "4",
+    number: 4,
     title: "R E A C T   W E B A P P",
     name: "MarsManage",
     content: [

@@ -9,11 +9,12 @@ import { staggerContainer } from "../utils/motion";
 import MarsFoodComponent from "../components/MarsFoodComponent";
 import MarsDietComponent from "../components/MarsDietComponent"
 import MarsManageComponent from "../components/MarsManageComponent"
+import PortfolioComponent from "../components/PortfolioComponent";
 
-const ProjectComponent = ({ title, name, content, github, hosting_link,index }) => {
+const ProjectComponent = ({number, title, name, content, github, hosting_link,index }) => {
  
   return (
-    <section className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 mt-32 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200">
+    <section className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200 nav-section" id={`Project${number}`}>
       <motion.div
         className="pt-6 pl-6 basis-[50%] flex flex-col justify-between h-full py-8"
         variants={staggerContainer}
@@ -22,7 +23,7 @@ const ProjectComponent = ({ title, name, content, github, hosting_link,index }) 
         viewport={{ once: false, amount: 0.5 }}
       >
         <div>
-          <TypingText title={title} className="tracking-wide" />
+          <TypingText title={title} size={24} className="tracking-wide" />
           <div className=" text-white font-bold lg:text-[60px] md:text-[40px] sm:text-[30px] text-[30px] mb-2 -mt-5">
             {name}
           </div>
@@ -50,6 +51,7 @@ const ProjectComponent = ({ title, name, content, github, hosting_link,index }) 
           </a>
         </div>
       </motion.div>
+    {index===0 && <PortfolioComponent />}
      {index===1 && <MarsDietComponent />}
      {index===2 && <MarsFoodComponent />} 
      {index===3 && <MarsManageComponent />}

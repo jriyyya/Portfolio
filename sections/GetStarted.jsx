@@ -22,7 +22,7 @@ const GetStarted = () => {
 
   return (
 
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 nav-section`} id="GetWorkDone">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -35,7 +35,7 @@ const GetStarted = () => {
         className={`flex ${styles.flexCenter}`}
       >
         {" "}
-        <TypingText title="| How i can help you" />
+        <TypingText size={32} title="| How i can help you" />
       </motion.div>
 
       <div className="flex flex-row justify-between">

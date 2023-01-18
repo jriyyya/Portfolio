@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <section
-      className={`${styles.paddings} relative z-10 flex flex-col justify-center items-center`}
+      className={`${styles.paddings} relative z-10 flex flex-col justify-center items-center nav-section`} id="Skills"
     >
       <motion.div
         className={`${styles.innerWidth} mx-auto mb-16 ${styles.flexCenter} flex-col`}
@@ -24,7 +24,7 @@ const Skills = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
       >
-        <TypingText title="| My Skills" textStyles="text-center" />
+        <TypingText title="| My Skills" size={32} textStyles="text-center" />
       </motion.div>
 
       <div className={`skills-text ${styles.flexCenter} flex flex-col`}>

@@ -37,6 +37,13 @@
   border: 0;
 }
 
+.nav-name-word-container.active .name-word-gradient-back,
+.nav-name-word-container.active .name-word-gradient-front {
+  transition: 500ms;
+  opacity: 1;
+  border: 0;
+}
+
 .name-word-gradient-back,
 .name-word-gradient-front {
   animation: hero-name-place-gradient-show 3000ms ease-in;
@@ -119,4 +126,14 @@
   from {
     opacity: 1;
   }
+}
+
+.nav-stick {
+  transition: 1000ms;
+  @apply fixed w-full top-0 flex justify-center z-50 py-2;
+  backdrop-filter: blur(4px)
+}
+
+.hero-section.no-justify{
+  @apply justify-start;
 }

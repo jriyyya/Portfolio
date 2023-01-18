@@ -8,7 +8,7 @@ import ProjectComponent from "./ProjectComponent";
 import { projectDetails } from "../constants";
 
 const Project = () => (
-  <section
+  <section 
     className={`${styles.paddings} relative z-10 flex flex-col justify-center items-center`}
   >
     <motion.div
@@ -18,8 +18,8 @@ const Project = () => (
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <TypingText title="| My Projects" textStyles="text-center" />
-      <TitleText
+      <TypingText title="| My Projects" size={32} textStyles="text-center"/>
+      {/* <TitleText
         title={
           <>
             Choose the project you wish <br className="md:block hidden" />
@@ -27,8 +27,9 @@ const Project = () => (
           </>
         }
         textStyles="text-center"
-      />
+      /> */}
     </motion.div>
+<div className="mt-12 gap-28 flex flex-col">
 
     {projectDetails.map((project, index) => (
       <div className="relative">
@@ -37,6 +38,7 @@ const Project = () => (
 
       </div>
     ))}
+</div>
 
     {/* <div className="relative">
     < ProjectComponent />

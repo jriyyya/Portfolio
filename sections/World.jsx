@@ -5,9 +5,9 @@ import { staggerContainer,fadeIn } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
 
 const World = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 nav-section`} id="Location">
     <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{once:'false', amount:0.25}} className={`${styles.innerWidth} mx-auto flex flex-col`}>
-      <TypingText title="| My Location" textStyles="text-center" />
+      <TypingText title="| My Location" size={32} textStyles="text-center" />
         <TitleText title={(<>There I am, in India </>)} textStyles="text-center">
         </TitleText>
       <motion.div variants={fadeIn('up','tween',0.3,1)}
