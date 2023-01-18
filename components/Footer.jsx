@@ -33,6 +33,7 @@ const Footer = () => (
                 key={social.name}
                 src={social.url}
                 alt={social.name}
+                onClick="window.open"
                 className="w-[32px] h-[32px] object-contain cursor-pointer"
               />
             ))}
