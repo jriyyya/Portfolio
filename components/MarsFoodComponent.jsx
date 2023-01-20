@@ -23,36 +23,36 @@ const MarsFoodComponent = () => {
         
       <div className="relative basis-1/2 overflow-hidden">
         <img
-          src="/monitorProject.png"
+          src="/monitorProject.webp"
           alt="monitor"
           className="absolute left-8"
           id="monitor"
           data-value="2"
           style={{
-            "--project-monitor": `url('/monitor-marsfood.png')`,
+            "--project-monitor": `url('/monitor-marsfood.webp')`,
           }}
         />
         <img
-          src="/circle.png"
+          src="/circle.webp"
           id="circle"
           alt="circle"
           className="absolute -z-[6] bottom-3 opacity-30 left-0 overflow-hidden "
         />
         <img
-          src="/keyboard.png"
+          src="/keyboard.webp"
           id="keyboard"
           alt="keyboard"
           data-value="1.8"
           className="parallax absolute bottom-5 opacity-50 right-70 w-[50%]"
         />
         <img
-          src="/phone.png"
+          src="/phone.webp"
           id="phone"
           alt="phone"
           data-value="0.6"
           className="parallax absolute bottom-40 opacity-50  w-[30%]"
           style={{
-            "--project-phone": `url('/phone-marsfood.png')`,
+            "--project-phone": `url('/phone-marsfood.webp')`,
           }}
         />
         </div>

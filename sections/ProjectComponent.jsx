@@ -47,7 +47,7 @@ const ProjectComponent = ({number, title, name, content, github, hosting_link,in
             target="_blank"
             className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[12px] glassmorphism hover:cursor-pointer z-10 transition ease-in duration-200 hover:scale-110 hover:shadow-[rgba(255,_255,_255,_0.1)_1px_1px_15px_0px]`}
           >
-            <img src="/github.png" alt="headset" className="object-contain" />
+            <img src="/github.webp" alt="headset" className="object-contain" />
           </a>
         </div>
       </motion.div>

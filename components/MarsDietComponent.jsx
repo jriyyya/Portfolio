@@ -15,7 +15,7 @@ const MarsFoodComponent = () => {
       });
     return(
         <div className="relative basis-1/2 overflow-hidden flex justify-center items-center">
-        <img className="laptop object-contain" src="/laptop.png" alt="laptop" data-value="1"/>
+        <img className="laptop object-contain" src="/laptop.webp" alt="laptop" id="laptop" data-value="1"/>
       </div>
 )
 }

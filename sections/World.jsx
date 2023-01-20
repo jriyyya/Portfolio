@@ -12,9 +12,9 @@ const World = () => (
         </TitleText>
       <motion.div variants={fadeIn('up','tween',0.3,1)}
       className="relative mt-[68px] flex w-full h-[500px]">
-        <img src="map.png" alt="map" className="w-full h-full object-cover" />
+        <img src="map.webp" alt="map" className="w-full h-full object-cover" />
         <div className="absolute right-[35%] bottom-[51%] w-[70px]h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="people-02.png" alt="people" className="w-full h-full"/>
+          <img src="people-02.webp" alt="people" className="w-full h-full"/>
         </div>
       </motion.div>
     </motion.div>

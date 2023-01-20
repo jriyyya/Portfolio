@@ -16,17 +16,17 @@ const MarsFoodComponent = () => {
   return (
     <div className="relative basis-1/2 overflow-hidden flex justify-center items-center">
       <img
-        src="/tablet.png"
+        src="/tablet.webp"
         alt="tablet"
         id="tablet"
         className="tablet absolute w-[68%] right-12 z-20"
         data-value="1"
         style={{
-          "--project-monitor": `url('/monitor-marsfood.png')`,
+          "--project-monitor": `url('/monitor-marsfood.webp')`,
         }}
       />
       <img
-        src="/tablet-down.png"
+        src="/tablet-down.webp"
         alt="tablet-down"
         id="tablet-down"
         className="absolute bottom-0 z-10"

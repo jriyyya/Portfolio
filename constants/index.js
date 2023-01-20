@@ -82,48 +82,48 @@ export const socials = [
 ];
 
 export const skillsIcon = [
-  { name: "BootStrap", icon: "/bootstrap.png" },
+  { name: "BootStrap", icon: "/bootstrap.webp" },
 
   {
     name: "Canva",
-    icon: "/canva.png",
+    icon: "/canva.webp",
   },
 
   {
     name: "C",
-    icon: "/cpro.png",
+    icon: "/cpro.webp",
   },
   {
     name: "C++",
-    icon: "/cpp.png",
+    icon: "/cpp.webp",
   },
 
   {
     name: "CSS3",
-    icon: "/css3.png",
+    icon: "/css3.webp",
   },
   {
     name: "Docker",
-    icon: "/docker.png",
+    icon: "/docker.webp",
   },
 
   {
     name: "Express",
-    icon: "/express.png",
+    icon: "/express.webp",
   },
   {
     name: "Heroku",
-    icon: "/heroku.png",
+    icon: "/heroku.webp",
   },
 
   {
     name: "Figma",
-    icon: "/figma.png",
+    icon: "/figma.webp",
   },
 
   {
     name: "Firebase",
-    icon: "/firebase.png",
+    icon: "/firebase.webp",
   },
   {
     name: "Framer Motion",
@@ -131,98 +131,98 @@ export const skillsIcon = [
   },
   {
     name: "HTML",
-    icon: "/html.png",
+    icon: "/html.webp",
   },
   {
     name: "Git",
-    icon: "/git.png",
+    icon: "/git.webp",
   },
   {
     name: "Github",
-    icon: "/github.png",
+    icon: "/github.webp",
   },
 
   {
     name: "Gitlab",
-    icon: "/gitlab.png",
+    icon: "/gitlab.webp",
   },
 
   {
     name: "Google Cloud Platform",
-    icon: "/googleCloudP.png",
+    icon: "/googleCloudP.webp",
   },
   {
     name: "Java",
-    icon: "/java.png",
+    icon: "/java.webp",
   },
 
   {
     name: "Javascript",
-    icon: "/javascript.png",
+    icon: "/javascript.webp",
   },
 
   {
     name: "Kubernetes",
-    icon: "/kubernetes.png",
+    icon: "/kubernetes.webp",
   },
 
   {
     name: "Linux",
-    icon: "/linux.png",
+    icon: "/linux.webp",
   },
 
   {
     name: "MongoDB",
-    icon: "/mongoDb.png",
+    icon: "/mongoDb.webp",
   },
   {
     name: "Markdown",
-    icon: "/markdown.png",
+    icon: "/markdown.webp",
   },
   {
     name: "Netlify",
-    icon: "/netlify.png",
+    icon: "/netlify.webp",
   },
   {
     name: "Next",
-    icon: "/next.png",
+    icon: "/next.webp",
   },
 
   {
     name: "Node.js",
-    icon: "/node.png",
+    icon: "/node.webp",
   },
 
   {
     name: "PostgreSQL",
-    icon: "/postgre.png",
+    icon: "/postgre.webp",
   },
 
-  { name: "Python", icon: "/python.png" },
+  { name: "Python", icon: "/python.webp" },
 
-  { name: "React", icon: "/react.png" },
+  { name: "React", icon: "/react.webp" },
 
   {
     name: "Rest APIs",
-    icon: "/restApi.png",
+    icon: "/restApi.webp",
   },
   {
     name: "SCSS",
-    icon: "/scss.png",
+    icon: "/scss.webp",
   },
 
   {
     name: "Tailwind CSS",
-    icon: "/tailwind.png",
+    icon: "/tailwind.webp",
   },
 
   {
     name: "Vercel",
-    icon: "/vercel.png",
+    icon: "/vercel.webp",
   },
 
   {
     name: "Vue Js",
-    icon: "/vue.png",
+    icon: "/vue.webp",
   },
 ];

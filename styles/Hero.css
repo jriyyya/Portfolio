@@ -137,3 +137,22 @@
 .hero-section.no-justify{
   @apply justify-start;
 }
+
+#heart:hover {
+  opacity: 50%;
+  cursor: none;
+animation: heart-beat 300ms infinite;
+}
+
+@keyframes heart-beat {
+from {
+  scale: 1.4;
+}
+to {
+  scale: 0.7;
+}
+}
+
+body{
+  @apply bg-primary-black overflow-x-hidden;
+}

@@ -1,5 +1,5 @@
 .project-card:hover #keyboard {
-  content: url("/keyboard-active.png");
+  content: url("/keyboard-active.webp");
   @apply opacity-100;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .project-card:hover #circle {
-    content: url('/circle-active.png');
+    content: url('/circle-active.webp');
     @apply opacity-100;
 }
 
@@ -24,9 +24,13 @@
 
 
 .project-card:hover #tablet{
-  content: url("/tablet-active.png")
+  content: url("/tablet-active.webp")
 }
 
 .project-card:hover #tablet-down{
-  content: url("/tablet-down-active.png")
+  content: url("/tablet-down-active.webp")
+}
+
+.project-card:hover #laptop{
+  content: url("/laptop-marsdiet.webp");
 }

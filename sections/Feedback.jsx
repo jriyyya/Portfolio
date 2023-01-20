@@ -80,7 +80,7 @@ const Feedback = () => (
       </motion.div>
 
       <div className="">
-        <img src="/cat.jpg" alt="cat" className="rounded-[32px]" />
+        <img src="/cat.webp" alt="cat" className="rounded-[32px]" />
       </div>
       
       </div>
