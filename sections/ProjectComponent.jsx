@@ -14,7 +14,7 @@ import PortfolioComponent from "../components/PortfolioComponent";
 const ProjectComponent = ({number, title, name, content, github, hosting_link,index }) => {
  
   return (
-    <section className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200 nav-section" id={`Project${number}`}>
+    <section className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200 nav-section mobile:flex-col-reverse mobile:w-full" id={`Project${number}`}>
       <motion.div
         className="pt-6 pl-6 basis-[50%] flex flex-col justify-between h-full py-8"
         variants={staggerContainer}

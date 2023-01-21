@@ -70,7 +70,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`hero-section h-screen flex flex-col justify-center`}>
+    <section className={`hero-section h-screen flex flex-col justify-center mobile:hidden`}>
       <div className=" hero-name">
         <div className="hero-name-inner flex flex-row justify-center gap-14">
           <div className="name-words-container flex flex-row justify-center gap-1">

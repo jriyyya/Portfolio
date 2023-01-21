@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <section
-      className={`${styles.paddings} relative z-10 flex flex-col justify-center items-center nav-section`} id="Skills"
+      className={`relative z-10 flex flex-col justify-center items-center nav-section mobile:w-full`} id="Skills"
     >
       <motion.div
         className={`${styles.innerWidth} mx-auto mb-16 ${styles.flexCenter} flex-col`}

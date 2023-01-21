@@ -55,9 +55,9 @@ export const projectDetails = [
 ];
 
 export const startingFeatures = [
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus?",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus?",
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, necessitatibus?",
+  "Proven ability to develop and maintain high-quality, responsive web applications using a variety of technologies, including Vue, React, Next, Nuxt, Express, PostgreSQL, SQL, and MongoDB.",
+"Strong experience in building and integrating back-end systems, allowing for fast and reliable data management and retrieval.",
+"Proven track record of delivering projects on time and within budget, making me a valuable asset for companies looking to improve their web development capabilities and increase their online presence."
 ];
 
 

@@ -8,6 +8,10 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
+    screens: {
+      mobile: {max: "780px"},
+      wideScreen: {min:"780px"},
+    },
     extend: {
       colors: {
         'primary-black': '#1A232E',
