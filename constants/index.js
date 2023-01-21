@@ -22,6 +22,7 @@ export const projectDetails = [
       "Created a MERN stack webapp to keep track of one's calories automatically",
       "Used multiple nutrition APIs to create a fall safe backend",
       "used firebase admin sdk for implementing auth on the backend with frontend token verification",
+      "Currently Work in progress"
     ],
     github: "https://github.com/marsian83/marsdiet-frontend",
     hosting_link: "https://marsdiet.netlify.app/",
