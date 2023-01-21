@@ -22,7 +22,7 @@ const ProjectComponent = ({
 }) => {
   return (
     <section
-      className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200 nav-section mobile:flex-col-reverse mobile:w-full mobile:h-max"
+      className="project-card border-2 border-white rounded-xl w-[1000px] h-[600px] z-10 flex flex-row justify-between hover:cursor-pointer hover:bg-[#0000002a] transition ease-in duration-200 nav-section mobile:flex-col-reverse mobile:w-full mobile:h-max mobile:pr-2"
       id={`Project${number}`}
     >
       <motion.div

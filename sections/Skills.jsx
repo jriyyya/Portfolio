@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <section
-      className={`relative z-10 flex flex-col justify-center items-center nav-section mobile:w-full`} id="Skills"
+      className={`relative z-10 flex flex-col justify-center items-center nav-section mobile:w-screen`} id="Skills"
     >
       <motion.div
         className={`${styles.innerWidth} mx-auto mb-16 ${styles.flexCenter} flex-col`}
@@ -28,7 +28,7 @@ const Skills = () => {
       </motion.div>
 
       <div className={`skills-text ${styles.flexCenter} flex flex-col`}>
-        <div className="parent-element">
+        <div className="parent-element flex flex-row flex-wrap w-[70vw] justify-center mobile:w-full">
           {skillsIcon.map((icon) => (
             <div key={icon.name} 
               className="w-1/8 p-4 element transition ease-in-out duration-100 "
@@ -43,7 +43,7 @@ const Skills = () => {
         <div className="relative">
           <div
             id="text-box"
-            className={` text-white border top-0 left-0 p-[3px] glassmorphism  w-[400px] rounded-lg mt-10 flex ${styles.flexCenter} cursor-pointer`}
+            className={` text-white border top-0 left-0 p-[3px] glassmorphism  w-[400px] rounded-lg mt-10 flex ${styles.flexCenter} cursor-pointer mobile:w-[90vw]`}
           >
             <TypeAnimation
               sequence={[

@@ -209,10 +209,10 @@ const Hero = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
       >
-        <div className="text-white flex flex-col mt-20 font-bold text-5xl items-center w-[100%] relative mobile:text-3xl">
+        <div className="text-white flex flex-col mt-20 font-bold text-5xl items-center w-[100%] relative mobile:text-2xl">
           <motion.div
             variants={textVariant(2)}
-            className="flex flex-col items-start gap-4 font-bold"
+            className="flex flex-col items-start gap-4 font-bold mobile:gap-1"
           >
             <div>I am a student at IIIT Gwalior</div>
             <div className="flex flex-row gap-4">
