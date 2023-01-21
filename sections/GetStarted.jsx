@@ -51,7 +51,7 @@ const GetStarted = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
           >
             <TitleText title={<>Get your work done with just a few clicks</>} />
-            <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+            <div className="mt-[31px] flex flex-col gap-[24px]">
               {startingFeatures.map((feature, index) => (
                 <StartSteps key={feature} number={index + 1} text={feature} />
               ))}
