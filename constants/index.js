@@ -51,7 +51,7 @@ export const projectDetails = [
       "The webapp allows registered employers to add new employees and keep a track of their daily work shift schedule",
     ],
     github: "https://github.com/marsian83/MarsManage",
-    hosting_link: "marsmanage.netlify.app/",
+    hosting_link: "https://marsmanage.netlify.app/",
   },
 ];
 
