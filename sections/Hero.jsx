@@ -219,11 +219,11 @@ const Hero = () => {
               and a
               <CyclingText
                 cycle={[
-                  "Anime Lover",
-                  "Music addict",
-                  "Web Developer",
                   "Programmer",
+                  "Web Developer",
                   "Blockchain enthusiast",
+                  "Music addict",
+                  "Anime Lover",
                   "Cat person",
                 ]}
               />
