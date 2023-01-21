@@ -14,7 +14,7 @@ const MarsFoodComponent = () => {
         document.addEventListener("mousemove", parallaxFunction);
       });
     return(
-        <div className="relative basis-1/2 overflow-hidden flex justify-center items-center mobile:basis-full">
+        <div className="relative basis-1/2 overflow-hidden flex justify-center items-center mobile:basis-full mobile:hidden">
         <img className="laptop object-contain" src="/laptop.webp" alt="laptop" id="laptop" data-value="1"/>
       </div>
 )

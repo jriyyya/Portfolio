@@ -37,7 +37,7 @@ const Hero = () => {
         scrollTrigger: {
           trigger: ".hero-name",
           pin: false,
-          start: "top 64px",
+          start: "top 10%",
           end: "top",
           scrub: 1,
           onUpdate(self) {
@@ -70,11 +70,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`hero-section h-screen flex flex-col justify-center mobile:hidden`}>
+    <section
+      className={`hero-section h-screen flex flex-col justify-center mobile:h-max`}
+    >
+      <div className="h-28"></div>
       <div className=" hero-name">
-        <div className="hero-name-inner flex flex-row justify-center gap-14">
+        <div className="hero-name-inner flex flex-row justify-center gap-14 mobile:flex-col mobile:scale-50">
           <div className="name-words-container flex flex-row justify-center gap-1">
-
             {/* R Word  */}
             <a className="name-word-container relative" href="#Skills">
               <div className="name-word aspect-square w-36 flex flex-row z-[1]">
@@ -173,7 +175,7 @@ const Hero = () => {
             </a>
 
             {/* i word */}
-            <a className="name-word-container relative" href="#Location"> 
+            <a className="name-word-container relative" href="#Location">
               <div className="name-word-i name-word h-36 w-20 flex flex-col z-[1]">
                 <div className=" basis-full border-2 border-white"></div>
               </div>
@@ -207,7 +209,7 @@ const Hero = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
       >
-        <div className="text-white flex flex-col mt-20 font-bold text-5xl items-center w-[100%] relative">
+        <div className="text-white flex flex-col mt-20 font-bold text-5xl items-center w-[100%] relative mobile:text-3xl">
           <motion.div
             variants={textVariant(2)}
             className="flex flex-col items-start gap-4 font-bold"
@@ -217,11 +219,12 @@ const Hero = () => {
               and a
               <CyclingText
                 cycle={[
+                  "Anime Lover",
+                  "Music addict",
                   "Web Developer",
                   "Programmer",
                   "Blockchain enthusiast",
-                  "Anime Lover",
-                  "Music addict",
+                  "Cat person",
                 ]}
               />
             </div>
@@ -233,17 +236,17 @@ const Hero = () => {
             <Link
               target={`_newABC`}
               href={"/Riya_Jain_IIIT_25.pdf"}
-              className="text-white font-extra bold border-4 rounded-3xl text-3xl px-5 py-4"
+              className="text-white flex flex-row font-extra bold border-4 rounded-3xl items-center text-3xl px-5 py-4 mobile:text-xl mobile:p-3 mobile:mb-16"
             >
-              Resume
+              Resume <img src="/download.webp" alt="download" className="invert w-[2ch] ml-2"/>
             </Link>
           </motion.div>
         </div>
         <motion.div
           variants={textVariant(3)}
-          className="absolute bottom-0 left-[48%] text-white flex justify-center"
+          className="mt-5 text-white flex justify-center"
         >
-          <img src="/scrolldown.gif" alt="scroll" className="invert w-16" />
+          <img src="/scrolldown.gif" alt="scroll" className="invert w-16 mobile:hidden" />
         </motion.div>
       </motion.div>
     </section>

@@ -1,5 +1,7 @@
-import { Footer, Navbar, Project, Skills } from "../components";
+import { Project, Skills } from "../components";
 import { Feedback, GetStarted, Hero, World } from "../sections";
+
+import FooterNew from "../components/FooterNew";
 
 const Page = () => (
   // <div className='bg-primary-black overflow-hidden pointer-events-none'>
@@ -19,9 +21,8 @@ const Page = () => (
       <Feedback />
       <div className="gradient-04 z-0" />
     </div>
-    <Footer />
+    <FooterNew />
   </>
-  // </div>
 );
 
 export default Page;

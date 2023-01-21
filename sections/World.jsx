@@ -5,17 +5,14 @@ import { staggerContainer,fadeIn } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
 
 const World = () => (
-  <section className={`${styles.paddings} relative z-10 nav-section`} id="Location">
+  <section className={`mx-36 my-28 relative z-10 nav-section mobile:mx-2 mobile:mt-16`} id="Location">
     <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{once:'false', amount:0.25}} className={`${styles.innerWidth} mx-auto flex flex-col`}>
       <TypingText title="| My Location" size={32} textStyles="text-center" />
-        <TitleText title={(<>There I am, in India </>)} textStyles="text-center">
+        <TitleText title={(<p className="text-centers">There I am, in India </p>)} textStyles="text-center">
         </TitleText>
       <motion.div variants={fadeIn('up','tween',0.3,1)}
-      className="relative mt-[68px] flex w-full h-[500px]">
-        <img src="map.webp" alt="map" className="w-full h-full object-cover" />
-        <div className="absolute right-[35%] bottom-[51%] w-[70px]h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="people-02.webp" alt="people" className="w-full h-full"/>
-        </div>
+      className="relative mt-[68px] flex w-full h-[500px] mobile:my-0 mobile:h-max">
+        <img src="map.png" alt="map" className="w-full h-full object-contain" />
       </motion.div>
     </motion.div>
   </section> 

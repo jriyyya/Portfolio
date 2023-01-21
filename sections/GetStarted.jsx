@@ -27,7 +27,7 @@ const GetStarted = () => {
 
   return (
     <section
-      className={`${styles.paddings} relative z-10 nav-section`}
+      className={`mx-36 relative z-10 nav-section mobile:mx-4`}
       id="GetWorkDone"
     >
       <motion.div
@@ -45,12 +45,12 @@ const GetStarted = () => {
           <TypingText size={32} title="| How i can help you" />
         </motion.div>
 
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between mobile:flex-col-reverse">
           <motion.div
             className="basis-1/2"
             variants={fadeIn("right", "tween", 0.2, 1)}
           >
-            <TitleText title={<>Get your work done with just a few clicks</>} />
+            <TitleText title={<p className="mobile:text-center">Get your work done by me</p>} />
             <div className="mt-[31px] flex flex-col gap-[24px]">
               {startingFeatures.map((feature, index) => (
                 <StartSteps key={feature} number={index + 1} text={feature} />
@@ -67,7 +67,7 @@ const GetStarted = () => {
             />
             <motion.img
               variants={monitorFramer("tween", 0.6, 1.5, "600%")}
-              className={` object-cover absolute top-10 left-40 w-28`}
+              className={` object-cover absolute top-10 left-40 w-28 mobile:left-[70%] mobile:top-[50%]`}
               src="/gfx/code.png"
               alt="block"
               data-value="9"
@@ -75,7 +75,7 @@ const GetStarted = () => {
             />
             <motion.img
               variants={monitorFramer("tween", 0.7, 1.5, "500%")}
-              className=" object-cover absolute top-[23rem] right-0 w-32 z-[1]"
+              className=" object-cover absolute top-[23rem] right-0 w-32 z-[1] mobile:left-0 mobile:top-20"
               src="/gfx/panel.png"
               alt="SmallBlock"
               data-value="3"

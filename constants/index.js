@@ -69,15 +69,15 @@ export const socials = [
     link: "https://www.linkedin.com/in/jriyyya"
     
   },
-  {
-    name: "instagram",
-    url: "/instagram.svg",
-    link: "https://www.linkedin.com/in/jriyyya"
-  },
  {
   name: "Github",
   url: "/github.svg",
-  link: "https://www.linkedin.com/in/jriyyya"
+  link: "https://github.com/jriyyya"
+ },
+ {
+  name: "Leetcode",
+  url: "https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png",
+  link: "https://leetcode.com/jriyyya/"
  }
 ];
 
