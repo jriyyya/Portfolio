@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { AnalyticsWrapper } from "../components/AnalyticsWrapper";
 
 const RootLayout = ({ children }) => (
   <html lang="en">
@@ -10,9 +11,11 @@ const RootLayout = ({ children }) => (
         rel="stylesheet"
       />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-
     </head>
-    <body>{children}</body>
+    <body>
+      {children}
+      <AnalyticsWrapper />
+    </body>
   </html>
 );
 
