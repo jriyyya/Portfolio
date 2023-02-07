@@ -17,11 +17,11 @@ const Page = () => (
       <div className="gradient-04 z-0" />
       <World />
     </div>
-    <div className="relative">
+    <div className="relative overflow-y-hidden"> 
+    <div className="absolute gradient-04 z-0" />
       <Feedback />
-      <div className="gradient-04 z-0" />
-    </div>
     <FooterNew />
+    </div>
   </>
 );
 

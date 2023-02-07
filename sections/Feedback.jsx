@@ -5,7 +5,7 @@ import { staggerContainer, zoomIn, fadeIn } from "../utils/motion";
 
 const Feedback = () => (
   <section
-    className={`px-40 my-28 nav-section mobile:px-4 mobile:mt-20 mobile:mb-0`}
+    className={` relative px-40 py-10 nav-section mobile:px-4 mobile:mt-20 mobile:mb-0`}
     id="Feedback"
   >
     <motion.div
@@ -56,7 +56,7 @@ const Feedback = () => (
               <h4 className="font-bold text-[26px] text-white">
                 Let's get in touch
               </h4>
-              <button className="bg-[#92b8f4ae] font-extrabold text-white rounded-lg px-4">
+              <button className="bg-[#92b8f4ae] font-extrabold text-white rounded-lg px-4 hover:scale-110 transition ease-in-out">
                 Send
               </button>
             </div>
