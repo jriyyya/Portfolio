@@ -17,7 +17,7 @@ const Page = () => (
       <div className="gradient-04 z-0" />
       <World />
     </div>
-    <div className="relative overflow-y-hidden"> 
+    <div className="relative overflow-hidden"> 
     <div className="absolute gradient-04 z-0" />
       <Feedback />
     <FooterNew />

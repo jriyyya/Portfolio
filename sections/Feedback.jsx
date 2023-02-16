@@ -5,7 +5,7 @@ import { staggerContainer, zoomIn, fadeIn } from "../utils/motion";
 
 const Feedback = () => (
   <section
-    className={` relative px-40 py-10 nav-section mobile:px-4 mobile:mt-20 mobile:mb-0`}
+    className={` relative px-40 py-10 nav-section mobile:px-4 mobile:mt-0 mobile:mb-0`}
     id="Feedback"
   >
     <motion.div
